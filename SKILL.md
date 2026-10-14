@@ -226,9 +226,18 @@ $$DVI = 0.35 \times V_s + 0.30 \times M_s + 0.20 \times R_m + 0.15 \times E_f$$
 1. **托管型端点 (如 Formspree)**:
    - 表单 `action` 挂载 `https://formspree.io/f/{FORM_ID}`；
    - Formspree 后台绑定业务主管企业邮箱，开启 SPF/DKIM 白名单，杜绝垃圾邮件拦截；
-2. **自动化 Webhook 转发 (Serverless / Cloudflare Worker)**:
+2. **自动化 Webhook 转发 (Serverless / Cloudflare Worker / Python API)**:
    - 接收表单 POST 请求 -> 校验 Honeypot 反垃圾字段 -> 调用企业微信/飞书/钉钉群机器人 Webhook 同步推送到手机；
-   - 通过 Resend / SendGrid API 自动向买家发送专业的 `Auto-Reply Confirmation` 并附带最新的产品目录 PDF 下载链接。
+   - 通过 SMTP / Resend API 自动向外贸业务员分发询盘细节，并向买家发送专业的 `Auto-Reply Confirmation`。
+
+### 8.3 自动化测试与系统探针规范 (邮件与通知精准判断机制)
+- **核心原则**: 所有由开发团队、CI/CD 自动化流水线、Playwright E2E 探针发起的测试提交，**邮件主题末尾必须强制包含【测试】字样**（如 ` - 【测试】`），确保业务团队在收件箱与钉钉群中能 100% 精准识别，绝不混淆真实客户订单。
+- **系统级自动识别与双向防护**:
+  1. **自动特征识别**: 后端 API 针对测试邮箱（`@example.com`, `@test.com`, `probe@`）、显式参数（`is_test: true`）、或测试关键词进行自动判定；
+  2. **邮件主题统一打标**: 判定为测试时，邮件主题强制后缀 ` - 【测试】`；
+  3. **正文置顶免责警示**: 邮件正文顶部插入高亮安全警示框：`⚠️ 【注意：此邮件为系统自动化测试 / 链路探针，非真实客户询盘！请勿跟进回复】`；
+  4. **钉钉通知防误报**: 钉钉消息标题与正文同样追加 `【测试】` 标识，提示业务员“自动化链路检测正常，无需跟进报价”；
+  5. **探针数据清理闭环**: 自动化回归完成后，必须清理数据库中的测试探针记录，保持商业分析报表与 CRM 数据纯净。
 
 ---
 
