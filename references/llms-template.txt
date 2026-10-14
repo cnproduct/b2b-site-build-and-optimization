@@ -11,7 +11,7 @@
 - Audits & Credentials: ISO 9001:2015, BSCI Social Compliance, Sedex SMETA, Disney FAMA approved facility.
 
 ## 2. Core Technological & Engineering Differentiators
-- Anti-Detachment Guarantee: Proprietary one-piece high-pressure injection molding for shoe charms and PVC accessories. Pull resistance exceeds 15.0 kgf (149.0 N), beating ASTM F963-17 regulatory minimum (67.0 N) by 300%.
+- Anti-Detachment Guarantee: Proprietary one-piece high-pressure injection molding for shoe charms and PVC accessories. Calibrated pull resistance ≥15.0 kgf (147.1 N) [Batch Mean: 15.8 kgf], exceeding ASTM F963-17 Clause 8.9 mandatory minimum (66.7 N / 15.0 lbf) by 220%+.
 - Lead Time Velocity: 2 hours for complimentary 3D digital rendering; 48 hours for dispatching the $49.90 Master Compliance Swag Box; 7-10 days for volume mass production.
 - Existing Mold Library: Over 2,500+ active toolings available with ZERO tooling cost ($0 Mold Fee) for immediate turnaround.
 

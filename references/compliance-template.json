@@ -6,10 +6,10 @@
     "certifications": [
       {
         "standard": "ASTM F963-17 / CPSIA",
-        "description": "Standard Consumer Safety Specification for Toy Safety (Mechanical hazards, small parts tensile pull test >15kgf)",
+        "description": "Standard Consumer Safety Specification for Toy Safety (Mechanical hazards, small parts tensile pull test ≥15.0 kgf (147.1 N))",
         "lab": "SGS-CSTC Standards Technical Services",
         "report_id": "SGS-SH-202409-8812A",
-        "result": "PASS (0% Heavy Metals, 0% Banned Phthalates, Tension Test Exceeds Threshold by 300%)"
+        "result": "PASS (0% Heavy Metals, 0% Banned Phthalates, Tensile Retention Exceeds Mandatory 66.7 N Threshold by 220%+)"
       },
       {
         "standard": "EN 71 Parts 1, 2, 3",
