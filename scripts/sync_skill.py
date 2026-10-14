@@ -14,6 +14,12 @@ import urllib.error
 import subprocess
 from pathlib import Path
 
+if sys.stdout.encoding and sys.stdout.encoding.lower() != 'utf-8':
+    try:
+        sys.stdout.reconfigure(encoding='utf-8')
+    except Exception:
+        pass
+
 SKILL_DIR = Path(__file__).resolve().parent.parent
 LAN_SHARED_BASE = Path(r"\\naike\耐科公司共享文件\Ai学习\Skill")
 LAN_TARGET_DIR = LAN_SHARED_BASE / "b2b-site-build-and-optimization"
