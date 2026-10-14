@@ -1,0 +1,16 @@
+{
+  "name": "b2b-site-build-and-optimization",
+  "version": "1.0.0",
+  "description": "外贸 B2B 独立站全生命周期建站与深度优化全案技能：涵盖多页静态架构设计、工业证据化攻防（拉力测试>15kgf/ASTM合规闭环）、DVI爆款商业情报穿透、交互式CBM集装箱海运计算器、$49.90极速合规样品盒高转化漏斗、机器可读GEO/AI端点 (llms.txt/sku-matrix.json)、Schema.org企业与母集团结构化标记、表单询盘闭环及Playwright全端视觉验收与多端持续同步机制。",
+  "author": "cnproduct (RenWork AI Innovation Team)",
+  "license": "MIT",
+  "entry": "SKILL.md",
+  "categories": [
+    "b2b-export",
+    "web-architecture",
+    "cro-conversion",
+    "geo-seo",
+    "industrial-evidence",
+    "ai-readiness"
+  ]
+}

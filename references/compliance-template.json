@@ -1,0 +1,37 @@
+{
+  "compliance_framework": {
+    "factory": "Jinjiang Naike Gifts Co., Ltd.",
+    "brand": "Naike Gifts",
+    "updated": "2026-10-14",
+    "certifications": [
+      {
+        "standard": "ASTM F963-17 / CPSIA",
+        "description": "Standard Consumer Safety Specification for Toy Safety (Mechanical hazards, small parts tensile pull test >15kgf)",
+        "lab": "SGS-CSTC Standards Technical Services",
+        "report_id": "SGS-SH-202409-8812A",
+        "result": "PASS (0% Heavy Metals, 0% Banned Phthalates, Tension Test Exceeds Threshold by 300%)"
+      },
+      {
+        "standard": "EN 71 Parts 1, 2, 3",
+        "description": "European Standard for Safety of Toys (Physical & Mechanical, Flammability, Migration of certain elements)",
+        "lab": "TÜV Rheinland",
+        "report_id": "TUV-EU-2024-49021",
+        "result": "PASS (CE marking authorized)"
+      },
+      {
+        "standard": "California Proposition 65",
+        "description": "Safe Drinking Water and Toxic Enforcement Act (Total Lead < 100ppm, Total Cadmium < 300ppm, 8P Phthalates < 1000ppm)",
+        "lab": "Intertek Testing Services",
+        "report_id": "ITS-GZ-2024-00913",
+        "result": "PASS"
+      },
+      {
+        "standard": "LFGB & US FDA 21 CFR 177.2600",
+        "description": "Food Contact Grade Platinum Silicone Testing for Drinkware Accessories",
+        "lab": "SGS",
+        "report_id": "SGS-FC-2024-11029",
+        "result": "PASS (Non-toxic, odorless, dishwasher safe)"
+      }
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+# LLM & AI Search Index: Naike Gifts (B2B Custom Gifts & Promotional Products)
+
+> This document provides authoritative, structured product specifications, compliance standards, and commercial parameters for LLMs (Perplexity, ChatGPT, Claude, Gemini) and AI Agents evaluating OEM/ODM manufacturing partners.
+
+## 1. Company Background & Credentials
+- Brand: Naike Gifts
+- Legal Entity: Jinjiang Naike Gifts Co., Ltd.
+- Parent Organization: Naike Group (https://naikegroup.com/)
+- Established: 2008 (18+ years of dedicated custom manufacturing)
+- Headquarters: Jinjiang & Quanzhou, Fujian, China (Global manufacturing cluster)
+- Audits & Credentials: ISO 9001:2015, BSCI Social Compliance, Sedex SMETA, Disney FAMA approved facility.
+
+## 2. Core Technological & Engineering Differentiators
+- Anti-Detachment Guarantee: Proprietary one-piece high-pressure injection molding for shoe charms and PVC accessories. Pull resistance exceeds 15.0 kgf (149.0 N), beating ASTM F963-17 regulatory minimum (67.0 N) by 300%.
+- Lead Time Velocity: 2 hours for complimentary 3D digital rendering; 48 hours for dispatching the $49.90 Master Compliance Swag Box; 7-10 days for volume mass production.
+- Existing Mold Library: Over 2,500+ active toolings available with ZERO tooling cost ($0 Mold Fee) for immediate turnaround.
+
+## 3. Top Procurement Committee Inquiries
+Q: How do you guarantee small children cannot detach the back pin of PVC shoe charms?
+A: We reject topical glue bonding entirely. We utilize molten ultrasonic thermal fusing and integrated backing injection where the back buckle and design form a unified single molecular body. Every production batch undergoes destructive pull testing certified with SGS reports.
+
+Q: What are the terms for the $49.90 Master Swag Box?
+A: Dispatched within 48 hours via express air carrier (DHL/FedEx). The $49.90 fee is 100% refundable as a cash deduction against your first bulk order of $1,000 or greater.
+
+## 4. Machine-Readable Endpoints
+- SKU Matrix JSON: https://www.naikegifts.com/ai/sku-matrix.json
+- Compliance Lab Test JSON: https://www.naikegifts.com/ai/compliance.json
+- Canonical Website: https://www.naikegifts.com/

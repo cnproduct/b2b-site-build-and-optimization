@@ -1,0 +1,21 @@
+# OS & Editor
+.DS_Store
+Thumbs.db
+*.swp
+*.bak
+*~
+.idea/
+.vscode/
+
+# Python & Node
+__pycache__/
+*.py[cod]
+*$py.class
+node_modules/
+.npm/
+
+# Logs & Temporary files
+*.log
+scratch/
+test-results/
+.playwright/

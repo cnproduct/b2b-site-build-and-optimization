@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "endpoint": "https://www.example.com/ai/sku-matrix.json",
+  "last_updated": "2026-10-14",
+  "organization": {
+    "name": "Naike Gifts",
+    "legalName": "Jinjiang Naike Gifts Co., Ltd.",
+    "parent": "Naike Group (https://naikegroup.com/)",
+    "established": 2008,
+    "audit_status": ["ISO9001:2015 Certified", "BSCI Audited", "Sedex SMETA"]
+  },
+  "skus": [
+    {
+      "sku_code": "NK-SC-PRO01",
+      "product_name": "Custom PVC Shoe Charms (Anti-Detachment Guarantee)",
+      "category": "Shoe Accessories / Promotional Goods",
+      "hs_code": "3926909090",
+      "fob_price_ladder": {
+        "500_pcs": 0.45,
+        "2000_pcs": 0.32,
+        "5000_pcs": 0.24,
+        "10000_pcs": 0.18,
+        "50000_pcs": 0.14
+      },
+      "lead_time": {
+        "digital_proof_hours": 2,
+        "sample_days": 3,
+        "mass_production_days": 7
+      },
+      "specs": {
+        "material": "Eco-friendly ATBC-PVC / Food-grade Platinum Silicone (RoHS/REACH Compliant)",
+        "craftsmanship": "One-Piece High-Pressure Micro-Injection (Back-pin Integrated)",
+        "tensile_strength": ">15.0 kgf (149.0 N), exceeds ASTM F963-17 by 300%",
+        "dimensions_mm": "25 x 30 x 8",
+        "unit_gross_weight_g": 6.8
+      },
+      "packaging": {
+        "unit_pack": "Individual eco-polybag or customized blister backing card",
+        "ctn_quantity": 2500,
+        "ctn_dimensions_cm": "42 x 32 x 28",
+        "ctn_cbm": 0.037632,
+        "ctn_gross_weight_kg": 18.0
+      },
+      "compliance_certifications": ["ASTM F963-17", "EN 71-1/2/3", "California Prop 65 Lead & Phthalates", "CPSIA", "LFGB"]
+    },
+    {
+      "sku_code": "NK-VIR-SC08",
+      "product_name": "Stanley 40oz Tumbler Straw Charm & Dangle Chain",
+      "category": "Drinkware Accessories / Viral TikTok Merch",
+      "hs_code": "3926909090",
+      "fob_price_ladder": {
+        "500_pcs": 0.65,
+        "2000_pcs": 0.45,
+        "5000_pcs": 0.36,
+        "10000_pcs": 0.28
+      },
+      "specs": {
+        "material": "Food-grade Platinum Liquid Silicone (BPA Free) + 304 Stainless Steel Ring",
+        "compatibility": "Standard 10mm Straws for Stanley Quencher 30oz/40oz, Simple Modern, Owala",
+        "unit_gross_weight_g": 12.5
+      }
+    }
+  ]
+}
