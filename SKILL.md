@@ -20,6 +20,7 @@ description: 外贸 B2B 独立站全生命周期建站与深度优化全案技�
 8. [阶段七：B2B 询盘捕获与表单邮件分发闭环](#8-阶段七b2b-询盘捕获与表单邮件分发闭环)
 9. [阶段八：自动化多端视觉与功能回归验收规范](#9-阶段八自动化多端视觉与功能回归验收规范)
 10. [阶段九：多端常态化自动同步与持续交付机制](#10-阶段九多端常态化自动同步与持续交付机制)
+11. [阶段十：Sitemap 实时更新与 Google Search Console (GSC) 提交闭环](#11-阶段十sitemap-实时更新与-google-search-console-gsc-提交闭环)
 
 ---
 
@@ -310,3 +311,24 @@ $$DVI = 0.35 \times V_s + 0.30 \times M_s + 0.20 \times R_m + 0.15 \times E_f$$
 后续对网站的每一次重大迭代（如新增产品线、优化 CBM 参数、新增合规认证）完成后：
 - 运行：`python d:\自建站\.agents\skills\b2b-site-build-and-optimization\scripts\sync_skill.py`
 - 即可一键完成 GitHub 和公司局域网共享文件的双重同步，形成企业沉淀。
+
+---
+
+## 11. 阶段十：Sitemap 实时更新与 Google Search Console (GSC) 提交闭环
+
+### 11.1 业务背景与执行红线
+- **核心原则**: 独立站的每一次页面优化、博客上新、产品 SKU 迭代或合规数据补充，如果不及时告知 Google，蜘蛛抓取会有数天甚至数周的延迟。因此，**每次代码或内容优化完成后，更新 `sitemap.xml` 并向 Google Search Console 提交，作为全流程强制必做闭环**。
+
+### 11.2 双轨提交架构设计 (`scripts/submit_sitemap_gsc.py`)
+1. **API 静默自动提交 (生产级首选)**:
+   - 依赖 Google Cloud Service Account 认证体系；
+   - 只要在项目根目录放置 `gsc_credentials.json` 并授权 GSC 权限，部署流水线自动调用 `webmasters.sitemaps.submit` 接口；
+   - 毫秒级提交并返回 `isPending`、`lastSubmitted` 与 `type` 详情。
+2. **Web 快捷直达引导模式 (零门槛兜底)**:
+   - 若尚未生成 API 密钥，流水线自动打印精确 URL 编码的 GSC 站点地图提交直达链接：
+     - 网址前缀属性直达: `https://search.google.com/search-console/sitemaps?resource_id=https%3A%2F%2Fwww.naikegifts.com%2F`
+     - 网域属性直达: `https://search.google.com/search-console/sitemaps?resource_id=sc-domain%3Anaikegifts.com`
+   - 外贸运营人员点击直达链接，输入 `sitemap.xml` 点击“提交”即可瞬间完成。
+
+### 11.3 全自动部署管线集成
+- 在 `deploy_and_sync_all.py` 流水线中，第 1 步完成远程 SFTP 推送与 Nginx 热重载，第 2 步完成 Skill 多端同步，第 3 步强制执行 `submit_gsc_sitemap()`，真正实现“一次优化，全端生效，即刻通知搜索引擎”。
